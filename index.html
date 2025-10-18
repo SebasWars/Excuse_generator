@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <title>Excuse Generator</title>
+  </head>
+  <body
+    class="flex justify-center items-center bg-gradient-to-t from-neutral-900 to-sky-950"
+  >
+    <div class="container flex flex-col items-center">
+      <header class="flex flex-col items-center">
+        <h1>EXCUSE GENERATOR 😅​</h1>
+        <p>Developed by Sebastian</p>
+      </header>
+
+      <div class="input flex flex-col">
+        <form class="flex justify-around mt-3" action="">
+          <div class="select_section flex flex-col">
+            <label
+              for="who_options"
+              class="options text-gray-900 dark:text-white"
+              >Who is the excuse for ?</label
+            >
+            <select
+              id="who_options"
+              class="bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            >
+              <option selected>Choose a context</option>
+              <option value="Delay">Delay</option>
+              <option value="Work Duties">Work Duties</option>
+              <option value="Meet with friends">Meet with friends</option>
+            </select>
+          </div>
+
+          <div class="select_section flex flex-col">
+            <label
+              for="serious_option"
+              class="options text-gray-900 dark:text-white"
+              >How serious is it ?</label
+            >
+            <select
+              id="serious_option"
+              class="bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            >
+              <option value="Enough">Enough</option>
+              <option value="Not at all">Not at all</option>
+            </select>
+          </div>
+        </form>
+        <button class="generate_btn">Generate</button>
+      </div>
+      <div class="answer_section"></div>
+    </div>
+  </body>
+</html>
